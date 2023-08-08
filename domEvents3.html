@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de nacionalidade</h1>
+    Qual é sua nacionalidade?<br><input type="text" name="nacionalidade" id="nacionalidade">
+    <input type="button" value="Enviar" onclick="calcNacionalidade()">
+    <div id="res"></div>
+</body>
+
+<script>
+   function calcNacionalidade() {
+        var inputField = window.document.getElementById('nacionalidade');
+        var resultado = window.document.querySelector('div#res');
+        if(inputField.value == "Brasileiro") {
+            resultado.innerHTML = "Você é brasileiro!";
+        } else {
+            resultado.innerHTML = "Você é estrangeiro!";
+        }
+   } 
+    
+
+</script>
+</html>
